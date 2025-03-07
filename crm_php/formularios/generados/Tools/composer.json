@@ -1,0 +1,20 @@
+{
+    "name": "php/asincrono",
+    "description": "asyncrono php",
+    "type": "library",
+    "require": {
+        "react/promise": "^2.8"
+    },
+    "license": "propietary",
+    "autoload": {
+        "psr-4": {
+            "Dev\\Helps\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nicolas"
+        }
+    ],
+    "minimum-stability": "stable"
+}

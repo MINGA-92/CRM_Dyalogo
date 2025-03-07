@@ -1,0 +1,16 @@
+{
+    "name": "dyalogo/eliminarpausas",
+    "description": "script para eliminar pausas repetidas, por proyecto",
+    "autoload": {
+        "psr-4": {
+            "Dyalogo\\Eliminarpausas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maicol Hernandez Peralta",
+            "email": "dev2@dyalogo.com"
+        }
+    ],
+    "require": {}
+}

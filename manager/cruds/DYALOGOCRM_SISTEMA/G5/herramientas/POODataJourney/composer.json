@@ -1,0 +1,15 @@
+{
+    "name": "dyalogo/script",
+    "autoload": {
+        "psr-4": {
+            "DataJourney\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Brayan Cardenas",
+            "email": "dev5@dyalogo.com"
+        }
+    ],
+    "require": {}
+}

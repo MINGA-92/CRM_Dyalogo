@@ -1,0 +1,16 @@
+{
+    "name": "dyalogo/poomuestras",
+    "description": "script para agregar campos nuevos a las tablas de las muestras, masivamente",
+    "autoload": {
+        "psr-4": {
+            "Dyalogo\\Poomuestras\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Maicol Hernandez Peralta",
+            "email": "dev2@dyalogo.com"
+        }
+    ],
+    "require": {}
+}

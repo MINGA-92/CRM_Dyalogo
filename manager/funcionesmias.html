@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+             
+    
+    <meta charset="utf-8"/>
+
+<title>Parent</title>
+
+<script type="text/javascript">
+    
+    function llamarFuncionHijo(){
+    	var ifrm = document.getElementById('hijo');
+    	var iframeContent = (ifrm.contentWindow || ifrm.contentDocument);
+    	
+    iframeContent.holaDesdeHijo();
+	}
+
+        </script>
+   
+</head>
+<body>
+	Hola este es el parent
+
+<a href="#" onclick="llamarFuncionHijo()">LlamarFuncion</a>
+<iframe src="http://192.168.2.151/crm_php/Estacion_contact_center.php" id="hijo"></iframe>
+
+
+ </body>
+</html>

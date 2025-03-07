@@ -1,0 +1,25 @@
+<IfModule mod_rewrite.c>
+# Activar rewrite
+RewriteEngine on
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+
+# RUTAS PARA API
+ 
+RewriteRule ^visor/(.*)/(.*) index.php?controller=Visor&action=$1&idViewer=$2 [L]
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+
+#ErrorDocument 404
+#ErrorDocument 403
+
+RewriteRule ^api/ - [L,R=404]
+
+Options all -Indexes
+IndexIgnore *.php *.html *.js
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+</IfModule>

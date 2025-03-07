@@ -1,0 +1,23 @@
+#.htaccess redirección a un directorio del dominio principal
+# Copiar y pegar el siguiente código en el archivo .htaccess
+# Hacer los cambios en el archivo de acuerdo con las instrucciones.
+# NO cambiar esta línea.
+		RewriteEngine on
+#
+	RewriteCond %{HTTP_HOST} ^(www.)?dyalogodev.com/Manager/$
+# Cambiar 'subfolder' por el directorio que se desea usar como dominio principal.
+	RewriteCond %{REQUEST_URI} !^/Manager/index.php
+# NO cambiar esta línea
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+# Cambiar 'subfolder' por el directorio que se desea usar como dominio principal.
+	RewriteRule ^(.*)$ /Manager/$1
+# Cambiar 'subfolder' por el directorio que se desea usar como dominio principal.
+# seguido por / y el archivo principal de tu sitio, index.php, index.html, etc.
+	RewriteCond %{HTTP_HOST} ^(www.)? dyalogodev.com /Manager/$
+	RewriteRule ^(/)?$ Manager/index.php [L]
+#Options –Indexes
+<Files .htaccess>
+	Order allow,deny
+	Deny from all
+</Files>
